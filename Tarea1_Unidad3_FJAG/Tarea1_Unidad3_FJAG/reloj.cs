@@ -14,6 +14,7 @@ namespace Tarea1_Unidad3_FJAG
     {
         private bool formato24Horas;
         private Timer timer;
+        private DateTime horaAlarma; //Variable para almacenar la hora de la alarma
         public reloj()
         {
             InitializeComponent(); InitializeComponent();
@@ -39,7 +40,7 @@ namespace Tarea1_Unidad3_FJAG
             }
         }
 
-        private string ObtenerHoraActual()
+        public string ObtenerHoraActual()
         {
 
             if (formato24Horas)
@@ -51,10 +52,28 @@ namespace Tarea1_Unidad3_FJAG
                 return DateTime.Now.ToString("hh:mm:ss tt"); // Formato de 12 horas con AM/PM
             }
         }
-        private void Timer_Tick(object sender, EventArgs e)
+
+        public void EstablecerAlarma(DateTime hora)
         {
+            horaAlarma = hora;
+
+        }
+
+        public void Timer_Tick(object sender, EventArgs e)
+        {
+            string horaActual = DateTime.Now.ToString("hh:mm:ss");
+
             // Actualizar el texto del reloj en cada tick del temporizador
             this.Text = ObtenerHoraActual();
+
+            // Verificar si la alarma está programada y si ha llegado la hora
+            if (horaAlarma != DateTime.MinValue && DateTime.Now >= horaAlarma)
+            {
+                // Mostrar un MessageBox cuando la alarma se active
+                MessageBox.Show("ALARMA!!!!");
+                // Restablecer la hora de la alarma para evitar que el MessageBox se muestre repetidamente
+                horaAlarma = DateTime.MinValue;
+            }
         }
     }
 }

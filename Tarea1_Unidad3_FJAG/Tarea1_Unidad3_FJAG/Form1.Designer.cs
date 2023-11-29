@@ -28,24 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnCambiarFormato = new System.Windows.Forms.Button();
             this.reloj1 = new Tarea1_Unidad3_FJAG.reloj();
+            this.txtAlarma = new System.Windows.Forms.TextBox();
+            this.btnEstablecerAlarma = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnCambiarFormato
+            // 
+            this.btnCambiarFormato.Location = new System.Drawing.Point(303, 172);
+            this.btnCambiarFormato.Name = "btnCambiarFormato";
+            this.btnCambiarFormato.Size = new System.Drawing.Size(151, 23);
+            this.btnCambiarFormato.TabIndex = 1;
+            this.btnCambiarFormato.Text = "Cambiar Formato 12h/24h";
+            this.btnCambiarFormato.UseVisualStyleBackColor = true;
+            this.btnCambiarFormato.Click += new System.EventHandler(this.btnCambiarFormato_Click);
             // 
             // reloj1
             // 
             this.reloj1.AutoSize = true;
+            this.reloj1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reloj1.Formato24Horas = false;
-            this.reloj1.Location = new System.Drawing.Point(332, 156);
+            this.reloj1.Location = new System.Drawing.Point(195, 189);
             this.reloj1.Name = "reloj1";
-            this.reloj1.Size = new System.Drawing.Size(32, 13);
+            this.reloj1.Size = new System.Drawing.Size(102, 25);
             this.reloj1.TabIndex = 0;
-            this.reloj1.Text = "reloj1";
+            this.reloj1.Text = "01:19:32 ";
+            // 
+            // txtAlarma
+            // 
+            this.txtAlarma.Location = new System.Drawing.Point(304, 202);
+            this.txtAlarma.Name = "txtAlarma";
+            this.txtAlarma.Size = new System.Drawing.Size(150, 20);
+            this.txtAlarma.TabIndex = 2;
+            // 
+            // btnEstablecerAlarma
+            // 
+            this.btnEstablecerAlarma.Location = new System.Drawing.Point(461, 202);
+            this.btnEstablecerAlarma.Name = "btnEstablecerAlarma";
+            this.btnEstablecerAlarma.Size = new System.Drawing.Size(108, 23);
+            this.btnEstablecerAlarma.TabIndex = 3;
+            this.btnEstablecerAlarma.Text = "Establecer Alarma";
+            this.btnEstablecerAlarma.UseVisualStyleBackColor = true;
+            this.btnEstablecerAlarma.Click += new System.EventHandler(this.btnEstablecerAlarma_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnEstablecerAlarma);
+            this.Controls.Add(this.txtAlarma);
+            this.Controls.Add(this.btnCambiarFormato);
             this.Controls.Add(this.reloj1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -57,6 +91,9 @@
         #endregion
 
         private reloj reloj1;
+        private System.Windows.Forms.Button btnCambiarFormato;
+        private System.Windows.Forms.TextBox txtAlarma;
+        private System.Windows.Forms.Button btnEstablecerAlarma;
     }
 }
 
