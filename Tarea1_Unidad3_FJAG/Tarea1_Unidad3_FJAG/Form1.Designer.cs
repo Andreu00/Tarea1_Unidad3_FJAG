@@ -28,13 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.reloj1 = new Tarea1_Unidad3_FJAG.reloj();
+            this.SuspendLayout();
+            // 
+            // reloj1
+            // 
+            this.reloj1.AutoSize = true;
+            this.reloj1.Formato24Horas = false;
+            this.reloj1.Location = new System.Drawing.Point(332, 156);
+            this.reloj1.Name = "reloj1";
+            this.reloj1.Size = new System.Drawing.Size(32, 13);
+            this.reloj1.TabIndex = 0;
+            this.reloj1.Text = "reloj1";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.reloj1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private reloj reloj1;
     }
 }
 
