@@ -28,7 +28,7 @@ namespace Tarea1_Unidad3_FJAG
         private void btnEstablecerAlarma_Click(object sender, EventArgs e)
         {
             //Convertir el texto del TextBox a un objeto DateTime
-
+            MessageBox.Show("Alarma Puesta");
             if (DateTime.TryParse(txtAlarma.Text, out DateTime horaAlarma)){                
                 reloj1.EstablecerAlarma(horaAlarma);
             }else{

@@ -36,7 +36,7 @@
             // 
             // btnCambiarFormato
             // 
-            this.btnCambiarFormato.Location = new System.Drawing.Point(303, 172);
+            this.btnCambiarFormato.Location = new System.Drawing.Point(176, 243);
             this.btnCambiarFormato.Name = "btnCambiarFormato";
             this.btnCambiarFormato.Size = new System.Drawing.Size(151, 23);
             this.btnCambiarFormato.TabIndex = 1;
@@ -47,24 +47,24 @@
             // reloj1
             // 
             this.reloj1.AutoSize = true;
-            this.reloj1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reloj1.Font = new System.Drawing.Font("Microsoft Sans Serif", 80.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reloj1.Formato24Horas = false;
-            this.reloj1.Location = new System.Drawing.Point(195, 189);
+            this.reloj1.Location = new System.Drawing.Point(156, 120);
             this.reloj1.Name = "reloj1";
-            this.reloj1.Size = new System.Drawing.Size(102, 25);
+            this.reloj1.Size = new System.Drawing.Size(498, 120);
             this.reloj1.TabIndex = 0;
-            this.reloj1.Text = "01:19:32 ";
+            this.reloj1.Text = "07:25:45 ";
             // 
             // txtAlarma
             // 
-            this.txtAlarma.Location = new System.Drawing.Point(304, 202);
+            this.txtAlarma.Location = new System.Drawing.Point(390, 243);
             this.txtAlarma.Name = "txtAlarma";
             this.txtAlarma.Size = new System.Drawing.Size(150, 20);
             this.txtAlarma.TabIndex = 2;
             // 
             // btnEstablecerAlarma
             // 
-            this.btnEstablecerAlarma.Location = new System.Drawing.Point(461, 202);
+            this.btnEstablecerAlarma.Location = new System.Drawing.Point(546, 243);
             this.btnEstablecerAlarma.Name = "btnEstablecerAlarma";
             this.btnEstablecerAlarma.Size = new System.Drawing.Size(108, 23);
             this.btnEstablecerAlarma.TabIndex = 3;

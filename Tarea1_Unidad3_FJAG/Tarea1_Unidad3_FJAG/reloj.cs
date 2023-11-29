@@ -70,7 +70,7 @@ namespace Tarea1_Unidad3_FJAG
             if (horaAlarma != DateTime.MinValue && DateTime.Now >= horaAlarma)
             {
                 // Mostrar un MessageBox cuando la alarma se active
-                MessageBox.Show("ALARMA!!!!");
+                MessageBox.Show("RIIIING RIIING!!!!");
                 // Restablecer la hora de la alarma para evitar que el MessageBox se muestre repetidamente
                 horaAlarma = DateTime.MinValue;
             }
