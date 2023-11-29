@@ -49,7 +49,7 @@ namespace Tarea1_Unidad3_FJAG
             }
             else
             {
-                return DateTime.Now.ToString("hh:mm:ss tt"); // Formato de 12 horas con AM/PM
+                return DateTime.Now.ToString("hh:mm:ss"); // Formato de 12 horas con AM/PM
             }
         }
 

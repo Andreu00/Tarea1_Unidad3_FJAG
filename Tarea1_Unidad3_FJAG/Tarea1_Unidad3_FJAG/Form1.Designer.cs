@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.btnCambiarFormato = new System.Windows.Forms.Button();
-            this.reloj1 = new Tarea1_Unidad3_FJAG.reloj();
             this.txtAlarma = new System.Windows.Forms.TextBox();
             this.btnEstablecerAlarma = new System.Windows.Forms.Button();
+            this.reloj1 = new Tarea1_Unidad3_FJAG.reloj();
             this.SuspendLayout();
             // 
             // btnCambiarFormato
@@ -43,17 +43,6 @@
             this.btnCambiarFormato.Text = "Cambiar Formato 12h/24h";
             this.btnCambiarFormato.UseVisualStyleBackColor = true;
             this.btnCambiarFormato.Click += new System.EventHandler(this.btnCambiarFormato_Click);
-            // 
-            // reloj1
-            // 
-            this.reloj1.AutoSize = true;
-            this.reloj1.Font = new System.Drawing.Font("Microsoft Sans Serif", 80.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reloj1.Formato24Horas = false;
-            this.reloj1.Location = new System.Drawing.Point(156, 120);
-            this.reloj1.Name = "reloj1";
-            this.reloj1.Size = new System.Drawing.Size(498, 120);
-            this.reloj1.TabIndex = 0;
-            this.reloj1.Text = "07:25:45 ";
             // 
             // txtAlarma
             // 
@@ -71,6 +60,17 @@
             this.btnEstablecerAlarma.Text = "Establecer Alarma";
             this.btnEstablecerAlarma.UseVisualStyleBackColor = true;
             this.btnEstablecerAlarma.Click += new System.EventHandler(this.btnEstablecerAlarma_Click);
+            // 
+            // reloj1
+            // 
+            this.reloj1.AutoSize = true;
+            this.reloj1.Font = new System.Drawing.Font("Microsoft Sans Serif", 80.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reloj1.Formato24Horas = false;
+            this.reloj1.Location = new System.Drawing.Point(156, 120);
+            this.reloj1.Name = "reloj1";
+            this.reloj1.Size = new System.Drawing.Size(498, 120);
+            this.reloj1.TabIndex = 0;
+            this.reloj1.Text = "07:48:24 ";
             // 
             // Form1
             // 
